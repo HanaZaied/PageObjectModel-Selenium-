@@ -2,6 +2,7 @@ package Features;
 
 import Pages.P01_HomePage;
 import Pages.P06_DropdownPage;
+import io.qameta.allure.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -18,6 +19,10 @@ public class F03_DropDown {
         driver.get("https://the-internet.herokuapp.com");
     }
     @Test
+    @Epic("Product Epic")
+    @Feature("AddToCart Feature")
+    @Description("Test that user can select from dropdown")
+    @Severity(SeverityLevel.BLOCKER)
     void dropDown(){
         Hp.clickDropDownLink();
         Dp.selectOption();

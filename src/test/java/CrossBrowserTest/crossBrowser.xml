@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name = "CrossBrowserSuit">
+    <parameter name="websiteURL" value="https://the-internet.herokuapp.com"></parameter>
+    <test name="ChromeTest" enabled="true">
+        <parameter name="browser" value="Chrome"></parameter>
+        <classes>
+            <class name="CrossBrowserTest.F01_Login"/>
+        </classes>
+    </test>
+
+    <test name="FirefoxTest" enabled="false">
+        <parameter name="browser" value="Firefox"></parameter>
+        <classes>
+            <class name="CrossBrowserTest.F01_Login"/>
+        </classes>
+    </test>
+
+    <test name="EdgeTest" enabled="false">
+        <parameter name="browser" value="Edge"></parameter>
+        <classes>
+            <class name="CrossBrowserTest.F01_Login"/>
+        </classes>
+    </test>
+
+</suite>

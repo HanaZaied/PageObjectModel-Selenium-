@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name = "ParallelMethodSuite" >
+<!--    <listeners>-->
+<!--        <listener class-name="TestNG_Listeners.Listeneres"></listener>-->
+<!--    </listeners>-->
+    <test name="ParallelMethodTests">
+        <classes>
+            <class name="Features.F01_Login"/>
+            <class name="Features.F03_DropDown"/>
+            <class name="Features.F02_Hover"/>
+        </classes>
+    </test>
+
+</suite>
